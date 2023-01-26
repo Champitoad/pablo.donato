@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Pablo Donato</title>
+</head>
+<body>
+  <details open>
+    <summary id="header">
+      <div id="lzone" class="header-zone">
+        <div class="header-zone-items">
+          <img class="spoil-btn" src="spoil.svg" />
+          <span id="pablo">Pablo</span>
+        </div>
+      </div>
+      <div id="banner-triangle">
+        <svg viewBox="0 0 20 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,100 20,100 0,0" />
+        </svg>    
+      </div>
+      <div id="rzone" class="header-zone">
+        <div class="header-zone-items">
+          <span id="donato">Donato</span>
+          <img id="github-btn" src="github.svg" />
+        </div>
+      </div>
+    </summary>
+    <div class="center">
+      <div class="content">
+        <p>
+          Hi! Welcome to my webpage.
+        </p>
+        <p>
+          I am a 3ʳᵈ year PhD student in computer science, working within the Partout
+          team of the LIX laboratory under the supervision of Benjamin Werner.
+        </p>
+        <p>
+          My work lies at the intersection between mathematical logic and
+          human-computer interaction, with applications to interactive theorem
+          proving. More precisely, I try to design graphical representations of
+          mathematical theories that are better suited to direct manipulation by
+          humans, but still understandable by computers.
+        </p>
+        <p>
+          Please feel free to send me a message at
+        </p>
+        <a href="mailto:pablo.donato@tuta.io">pablo.donato@tuta.io</a>
+        <h2>News</h2>
+        <ul>
+          <li>
+            <strong>01-21-2023 – </strong>
+            I gave a talk at <a
+            href="https://popl23.sigplan.org/home/CoqPL-2023">CoqPL 2023</a>
+            in Boston on <i>Integrating graphical proofs in Coq.</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </details>
+  <details open>
+    <summary>
+      <h1 class="content">Research</h1>
+    </summary>
+    <div class="center">
+      <div class="content">
+        <h2>Keywords</h2>
+        <p>
+          proof assistants • constructive logics • proof theory • deep inference •
+          existential graphs • programming language theory • Curry-Howard
+          correspondance • end-user proving • gestural interfaces
+        </p>
+    
+        <h2>PhD thesis</h2>
+    
+        <p>
+          I develop three interrelated lines of investigations:
+        </p>
+    
+        <ul>
+          <li>
+            <p>
+              <strong>Proof-by-action</strong> is a paradigm where the user builds proofs by
+              executing gestural actions directly on the proof state. Typically, this
+              corresponds to the possibility of clicking, dragging and dropping items
+              which represent the conclusion and hypotheses of the current goal. A
+              prototype implementation of this paradigm called Actema is already
+              available online at actema.xyz. With Benjamin Werner, we are currently
+              building coq-actema, a system that extends and integrates the interface
+              of Actema in the Coq proof assistant.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Deep inference</strong> is a new methodology in proof theory, which aims
+              at overcoming some limitations of Gentzen-style proof systems while
+              preserving their good properties. In the setting of interactive proof
+              building, one interesting feature of deep inference systems is their
+              ability to preserve the context in which reasoning is performed. This
+              gave rise recently to the idea of subformula linking, a method for
+              solving goals incrementally by connecting dual occurrences of
+              subformulas. I designed an extension of subformula linking for
+              intuitionistic first-order logic with equality, which generalizes the
+              behavior of known application and rewriting tactics.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Existential graphs</strong> are among the first diagrammatic proof
+              systems in history, invented by C. S. Peirce as early as 1882. They
+              enable a kind of reasoning free from the linguistic notion of logical
+              connective, which is a promising venue for fully graphical proving
+              interfaces. Initially conceived for classical logic, A. Oostra
+              recently introduced an intuitionistic version of existential graphs,
+              based on Peirce's own intuitions of logical implication. This paves
+              the way for connections with the trend of constructive logics in proof
+              assistants.
+            </p>
+            <p>
+              To handle quantification and equality, Peirce and Oostra use so-called lines of
+              identity, a string diagram-like notation well-suited to the intensional analysis
+              of relations. But state-of-the-art proof assistants are based on type theory —
+              and thus at their core on the λ-calculus, which is an intensional theory of
+              functions. Hence I designed a fully inductive variant of Oostra's graphs, based
+              on the standard notions of binder and variable at the root of λ-calculus. This
+              eases the development of a formalized metatheory, as well as the connection with
+              type theory. I named it flower calculus, because of the way I like to draw the
+              graphs as nested flowers.
+            </p>
+          </li>
+        </ul>
+        <h2>Manifesto</h2>
+        <p>
+          Since the day I discovered computers, I have been fascinated by their
+          ability to represent and give life to human intentions. I quickly got into
+          programming to unlock their full creative potential, but always felt a
+          discrepancy between the immediacy and intuitiveness of graphical interfaces,
+          and the expressivity and rigidity of programming languages.
+        </p>
+        <p>
+          Then I discovered formal logic, a field that claims to capture correct reasoning
+          and truth instead of arbitrary computation. This really hit home, as the
+          experience of program debugging deepened my doubts about the meaningfulness of
+          my own thoughts. How could I ever be sure the programs I wrote would always
+          behave in the way I intended them to? Formal logic provided a language to
+          clarify my intent, and guarantee that programs respect it.
+        </p>
+        <p>
+          Now although I love analysing things under the logico-computational microscope,
+          I feel like it focuses too much on linguistic expressions, and the way they can
+          be classified and checked for validity. It assumes I already know what I want,
+          and how to express it symbolically. What I seek for is a format enabling a true
+          collaboration with the computer, one where I can freely visualize, manipulate,
+          transform and discover new ideas under its guidance, instead of squeezing my
+          thoughts in its pre-existing categories. Meaning should emerge from my
+          interaction with the computer and its users, not from my head.
+        </p>
+        <p>
+          Today I believe that logic can offer principled ways of designing and evolving
+          such formats. This is because logicians have developed conceptual tools to
+          specify meaning a priori, before knowing its precise embodiment.  But to make
+          this reality possible, we need to rethink the architecture of the logical
+          edifice, so that we can articulate formats in a less rigid, more interoperable
+          way. We need to open logic to the world, rather than try to fit the world into
+          logics.
+        </p>
+      </div>
+    </div>
+  </details>
+  <details open>
+    <summary>
+      <h1 class="content">Publications</h1>
+    </summary>
+    <div class="center">
+      <div class="content">
+        <h2>2022</h2>
+        <ul>
+          <li>
+            Pablo Donato, Pierre-Yves Strub, and Benjamin Werner. 2022.
+            <i>A drag-and-drop proof tactic.</i>
+            In Proceedings of the 11th ACM SIGPLAN International Conference on
+            Certified Programs and Proofs (CPP 2022). Association for Computing
+            Machinery, New York, NY, USA, 197–209.
+            <a
+            href="https://doi.org/10.1145/3497775.3503692">https://doi.org/10.1145/3497775.3503692</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </details>
+  <details open>
+    <summary>
+      <h1 class="content">Resume</h1>
+    </summary>
+    <div class="center">
+      <div class="content">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <span>MPRI (Master Parisien de Recherche en Informatique)</span>
+            <span>2018-2020</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </details>
+  <details open>
+    <summary>
+      <h1 class="content">Miscellaneous</h1>
+    </summary>
+    <div class="center">
+      <div class="content">
+        <ul>
+          <li>
+            <p>
+              I am a member of the <a href="https://www.engboris.fr/ts/">
+              Transcendentalist Circle</a>, a working group on the foundations of
+              logic and computation in light of J.-Y. Girard's <i>Transcendental
+              Syntax</i> programme.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </details>
+</body>
+</html>
