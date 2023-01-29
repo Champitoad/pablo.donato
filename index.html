@@ -9,29 +9,31 @@
 </head>
 <body>
   <details open>
-    <summary id="header">
-      <div id="lzone" class="header-zone">
-        <div class="header-zone-items">
-          <img class="spoil-btn" src="spoil.svg" />
-          <span id="pablo">Pablo</span>
-        </div>
+    <summary id="header" class="black">
+      <div id="lzone" class="header-zone black">
+        <span id="pablo">Pablo</span>
       </div>
       <div id="banner-triangle">
         <svg viewBox="0 0 20 100" xmlns="http://www.w3.org/2000/svg">
           <polygon points="0,100 20,100 0,0" />
         </svg>    
       </div>
-      <div id="rzone" class="header-zone">
-        <div class="header-zone-items">
-          <span id="donato">Donato</span>
-          <div id="github-btn">
-            <img src="github.svg" />
-          </div>
+      <div id="rzone" class="header-zone white" href="www.google.fr">
+        <span id="donato">Donato</span>
+      </div>
+      <div class="content">
+        <h1></h1>
+        <div id="intro-thread" class="white thread"></div>
+        <div id="github-btn">
+          <div id="github-handle"></div>
+          <img src="github.svg" />
+          <div class="btn-space"></div>
         </div>
       </div>
     </summary>
-    <div class="center">
-      <div class="content">
+    <section>
+      <div id="intro" class="content">
+        <div class="black thread"></div>
         <p>
           Hi! Welcome to my webpage.
         </p>
@@ -60,15 +62,19 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </details>
-  <details open>
+  <details>
     <summary>
-      <h1 class="content">Research</h1>
+      <div class="content">
+        <div class="white thread"></div>
+        <h1>Research</h1>
+      </div>
     </summary>
-    <div class="center">
+    <section>
       <div class="content">
         <h2>Keywords</h2>
+        <div class="black thread"></div>
         <p>
           proof assistants • constructive logics • proof theory • deep inference •
           existential graphs • programming language theory • Curry-Howard
@@ -169,15 +175,19 @@
           logics.
         </p>
       </div>
-    </div>
+    </section>
   </details>
-  <details open>
+  <details>
     <summary>
-      <h1 class="content">Publications</h1>
+      <div class="content">
+        <div class="white thread"></div>
+        <h1>Publications</h1>
+      </div>
     </summary>
-    <div class="center">
+    <section>
       <div class="content">
         <h2>2022</h2>
+        <div class="black thread"></div>
         <ul>
           <li>
             Pablo Donato, Pierre-Yves Strub, and Benjamin Werner. 2022.
@@ -190,15 +200,19 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </details>
-  <details open>
+  <details>
     <summary>
-      <h1 class="content">Resume</h1>
+      <div class="content">
+        <div class="white thread"></div>
+        <h1>Resume</h1>
+      </div>
     </summary>
-    <div class="center">
+    <section>
       <div class="content">
         <h2>Education</h2>
+        <div class="black thread"></div>
         <ul>
           <li>
             <span>MPRI (Master Parisien de Recherche en Informatique)</span>
@@ -206,14 +220,18 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </details>
-  <details open>
+  <details>
     <summary>
-      <h1 class="content">Miscellaneous</h1>
-    </summary>
-    <div class="center">
       <div class="content">
+        <div class="white thread"></div>
+        <h1>Miscellaneous</h1>
+      </div>
+    </summary>
+    <section>
+      <div class="content">
+        <div class="black thread"></div>
         <ul>
           <li>
             <p>
@@ -225,7 +243,10 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   </details>
+  <div class="content">
+    <div class="black thread"></div>
+  </div>
 </body>
 </html>

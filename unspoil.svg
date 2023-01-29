@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="unspoil.svg"
+   sodipodi:docname="spoil.svg"
    xml:space="preserve"
    inkscape:export-filename="spoil.svg"
    inkscape:export-xdpi="96"
@@ -35,7 +35,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g29667-7-6-9" /><defs
+     inkscape:current-layer="g27711-9-6-6" /><defs
      id="defs2" /><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -52,7 +52,7 @@
          cx="29.975979"
          r="13.484408" /><g
          id="g27711-9-6-6"
-         transform="matrix(0.48896911,0,0,-0.48896911,-161.07588,1161.7784)"
+         transform="matrix(0.48896911,0,0,0.48896911,-161.07589,398.44771)"
          style="fill:#ffffff;stroke:#000000;stroke-width:1.02256;stroke-dasharray:none;stroke-opacity:1"><rect
            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.02256;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
            id="rect27705-6-8-6"
