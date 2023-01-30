@@ -1,6 +1,5 @@
 # Graphics
 
-- Small lines to mark h2 titles
 - Custom bullet lists integrated in the thread
 
 # Layout
