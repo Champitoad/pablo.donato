@@ -7,7 +7,7 @@ body {
     --section-height: 80px;
     --content-width: 800px;
     --thread-width: 1px;
-    --spoil-width: 28px;
+    --spoil-width: 24px;
     font-family: "Hanken Grotesk";
     font-weight: 300;
     line-height: 1.4;
@@ -109,11 +109,20 @@ section .thread {
 }
 
 .spoil-btn {
-    content: url(spoil.svg);
     width: var(--spoil-width); 
+    height: var(--spoil-width); 
+    transform: rotate(0deg);
+    transition: transform linear 150ms;
+}
+.pacman {
+    color: rgba(255, 255, 255, 0);
+    transition: color linear 150ms;
+}
+summary:hover .pacman {
+    color: rgba(255, 255, 255, 1);
 }
 details[open] .spoil-btn {
-    content: url(unspoil.svg);
+    transform: rotate(90deg);
 }
 
 section {

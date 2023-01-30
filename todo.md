@@ -1,6 +1,5 @@
 # Graphics
 
-- use pacmans instead of arrows for spoil buttons
 - Small lines to mark h2 titles
 - Custom bullet lists integrated in the thread
 
