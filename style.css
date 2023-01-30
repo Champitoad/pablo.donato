@@ -115,6 +115,10 @@ section .thread {
     transform: rotate(0deg);
     transition: transform linear 150ms;
 }
+#header .spoil-btn {
+   padding: 0;
+}
+
 .pacman {
     color: rgba(255, 255, 255, 0);
     transition: color linear 150ms;
