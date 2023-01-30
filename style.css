@@ -54,23 +54,41 @@ summary h1 {
     font-size: 22pt;
 }
 
-summary h1::before {
-    z-index: 1;
+.thread-zone {
     position: absolute;
-    left: -1px;
-    top: calc((var(--section-height) - var(--spoil-width)) / 2);
-    content: "";
-    display: block;
+    top: 0;
+    left: 0;
     width: var(--spoil-width);
-    height: var(--spoil-width);
-    background-image: url(spoil.svg);
-    background-size: var(--spoil-width) var(--spoil-width);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#header h1::before {
+#header .thread-zone {
     top: calc((var(--header-height) - var(--spoil-width)) / 2);
+    height: auto;
 }
-details[open] summary h1::before {
-    background-image: url(unspoil.svg);
+
+.thread {
+    width: var(--thread-width);
+}
+summary .thread {
+    flex-grow: 1;
+}
+section .thread {
+    height: 100%;
+}
+#header .thread {
+    height: calc((var(--header-height) - var(--spoil-width)) / 2);
+}
+
+.spoil-btn {
+    content: url(spoil.svg);
+    width: var(--spoil-width); 
+}
+details[open] .spoil-btn {
+    content: url(unspoil.svg);
+    src: local("spoil.svg");
 }
 
 section {
@@ -110,19 +128,6 @@ section .content {
     margin: 0 0 30px 0;
 }
 
-.thread {
-    z-index: 0;
-    width: var(--thread-width);
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: calc(var(--spoil-width) / 2 - var(--thread-width) - 1px);
-}
-#intro-thread {
-    top: calc((var(--header-height) - var(--spoil-width)) / 2 + var(--spoil-width));
-    height: calc((var(--header-height) - var(--spoil-width)) / 2);
-}
-
 .white {
     background-color: white;
 }
@@ -143,6 +148,7 @@ section .content {
 
 #github-btn {
     position: absolute;
+    top: 0;
     right: 0;
 }
 

@@ -9,9 +9,6 @@
 
 # Layout
 
-- try to use flexbox instead of absolute positioning + z-index for thread and
-  spoil buttons, in order to get perfect centering of buttons relative to thread
-
 # Interaction
 
 - restrict header summary to lzone
