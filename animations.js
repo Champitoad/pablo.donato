@@ -25,7 +25,7 @@ class Accordion {
         // Check if the element is being closed or is already closed
         if (this.isClosing || !this.el.open) {
             this.open();
-            // Check if the element is being openned or is already open
+        // Check if the element is being opened or is already open
         } else if (this.isExpanding || this.el.open) {
             this.shrink();
         }
@@ -99,6 +99,10 @@ class Accordion {
     }
 
     onAnimationFinish(open) {
+        // Jump to the summary to ensure we see the content being expanded
+        // this.summary.scrollIntoView({ behavior: "smooth" });
+        // this.summary.scrollIntoView();
+
         // Set the open attribute based on the parameter
         this.el.open = open;
         // Clear the stored animation
