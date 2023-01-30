@@ -14,4 +14,3 @@
 
 - linearly animated color inversion on click on rzone (ideally should also
   invert GitHub logo)
-- linear fill animation for spoil buttons on hover
