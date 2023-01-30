@@ -117,7 +117,7 @@ section .thread {
 .spoil-btn {
     width: var(--spoil-width); 
     height: var(--spoil-width); 
-    transform: rotate(0deg);
+    transform: rotate(45deg);
     transition: transform linear 150ms;
 }
 .pacman {
@@ -128,7 +128,7 @@ summary:hover .pacman {
     color: rgba(255, 255, 255, 1);
 }
 details[open] .spoil-btn {
-    transform: rotate(90deg);
+    transform: rotate(-45deg);
 }
 
 section {
