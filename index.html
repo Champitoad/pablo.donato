@@ -85,8 +85,10 @@
         <p>
           I am a 3ʳᵈ year PhD student in computer science, working within the
           <a href="https://team.inria.fr/partout/">Partout team</a> of the <a
-          href="https://www.lix.polytechnique.fr/">LIX</a> under the supervision
-          of Benjamin Werner.
+          href="https://www.lix.polytechnique.fr/">LIX laboratory</a> under the
+          supervision of <a
+          href="http://www.lix.polytechnique.fr/Labo/Benjamin.Werner/">Benjamin
+          Werner</a>.
         </p>
         <p>
           My work lies at the intersection between <a
@@ -109,13 +111,26 @@
         <ul>
           <li>
             <div>
-              <strong>01-21-2023 – </strong>
+              <strong>21-01-2023 – </strong>
               I gave a talk at <a
               href="https://popl23.sigplan.org/home/CoqPL-2023">CoqPL 2023</a>
               in Boston on <i>Integrating graphical proofs in Coq.</i>
               <div class="resources">
                 <a href="abstracts/coqpl23.pdf">abstract</a>
                 <a href="slides/coqpl23.pdf">slides</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>30-05-2022 – </strong>
+              I presented my thesis mini-defense, titled <i>"Interactive Deep
+              Reasoning"</i>, at the <a
+              href="https://smimram.gitlabpages.inria.fr/proofs-algorithms/seminar/">
+              Partout seminar</a>.
+              <div class="resources">
+                <a href="abstracts/mini-defense.pdf">manuscript</a>
+                <a href="slides/mini-defense.pdf">slides</a>
               </div>
             </div>
           </li>
@@ -139,14 +154,38 @@
     </summary>
     <section>
       <div class="content">
-        <h2>Keywords</h2>
+        <h2>Interests</h2>
         <div class="thread-zone">
           <div class="black thread"></div>
         </div>
         <p>
-          proof assistants • constructive logics • proof theory • deep inference •
-          existential graphs • programming language theory • Curry-Howard
-          correspondance • end-user proving • gestural interfaces
+          <a href="https://en.wikipedia.org/wiki/Proof_assistant">
+            proof assistants</a>
+          <span class="bullet"></span>
+          <a href="https://en.wikipedia.org/wiki/Intuitionistic_logic">
+            constructive logics</a>
+          <span class="bullet"></span>
+          <a href="https://en.wikipedia.org/wiki/Proof_theory">
+            proof theory</a>
+          <span class="bullet"></span>
+          <a href="http://alessio.guglielmi.name/res/cos/">
+            deep inference</a>
+          <span class="bullet"></span>
+          <a href="http://www.jfsowa.com/peirce/ms514.htm">
+            existential graphs</a>
+          <span class="bullet"></span>
+          <a href="https://en.wikipedia.org/wiki/Programming_language_theory">
+            programming language theory</a>
+          <span class="bullet"></span>
+          <a
+            href="https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">
+            Curry-Howard correspondence</a>
+          <span class="bullet"></span>
+          <a href="https://en.wikipedia.org/wiki/End-user_development">
+            end-user programming</a>
+          <span class="bullet"></span>
+          <a href="https://en.wikipedia.org/wiki/Direct_manipulation_interface">
+            direct manipulation interfaces</a>
         </p>
     
         <h2>PhD thesis</h2>
@@ -160,52 +199,70 @@
             <p>
               <strong>Proof-by-action</strong> is a paradigm where the user
               builds proofs by executing gestural actions directly on the proof
-              state. Typically, this corresponds to the possibility of clicking,
-              dragging and dropping items which represent the conclusion and
-              hypotheses of the current goal. A prototype implementation of this
-              paradigm called Actema is already available online at <a
-              href="http://actema.xyz">actema.xyz</a>. With Benjamin Werner, we are
-              currently building coq-actema, a system that extends and
-              integrates the interface of Actema in the Coq proof assistant.
+              state. Typically, this corresponds to the possibility of
+              <i>clicking</i>, <i>dragging</i> and <i>dropping</i> items which
+              represent the conclusion and hypotheses of the current goal. A
+              prototype implementation of this paradigm called <i>Actema</i> is
+              already available online at <a
+              href="http://actema.xyz">actema.xyz</a>. With Benjamin Werner, we
+              are currently building <i>coq-actema</i>, a system that extends
+              and integrates the interface of Actema in the <a
+              href="https://coq.inria.fr/">Coq proof assistant</a>.
             </p>
           </li>
           <li>
             <p>
-              <strong>Deep inference</strong> is a new methodology in proof theory, which aims
-              at overcoming some limitations of Gentzen-style proof systems while
-              preserving their good properties. In the setting of interactive proof
-              building, one interesting feature of deep inference systems is their
-              ability to preserve the context in which reasoning is performed. This
-              gave rise recently to the idea of subformula linking, a method for
-              solving goals incrementally by connecting dual occurrences of
-              subformulas. I designed an extension of subformula linking for
-              intuitionistic first-order logic with equality, which generalizes the
-              behavior of known application and rewriting tactics.
+              <strong>Deep inference</strong> is a new methodology in proof
+              theory, which aims at overcoming some limitations of <a
+              href="https://en.wikipedia.org/wiki/Sequent_calculus">
+              Gentzen-style</a> proof systems while preserving their good
+              properties. In the setting of interactive proof building, one
+              interesting feature of deep inference systems is their ability to
+              preserve the <i>context</i> in which reasoning is performed. This
+              gave rise recently to the idea of <a
+              href="https://hal.inria.fr/hal-00937009/"><i>subformula
+              linking</i></a>, a method for solving goals incrementally by
+              connecting dual occurrences of subformulas. I designed <a
+              href="https://popl22.sigplan.org/details/CPP-2022-papers/4/A-Drag-and-Drop-Proof-Tactic">an
+              extension</a> of subformula linking for intuitionistic first-order
+              logic with equality, which generalizes the behavior of known
+              application and rewriting tactics.
             </p>
           </li>
           <li>
             <div>
               <p>
-                <strong>Existential graphs</strong> are among the first diagrammatic proof
-                systems in history, invented by C. S. Peirce as early as 1882. They
-                enable a kind of reasoning free from the linguistic notion of logical
-                connective, which is a promising venue for fully graphical proving
+                <strong>Existential graphs</strong> are among the first
+                diagrammatic proof systems in history, invented by <a
+                href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce">
+                C. S. Peirce</a> as early as 1882. They enable a kind of
+                reasoning free from the linguistic notion of logical connective,
+                which is a promising venue for fully graphical proving
                 interfaces. Initially conceived for classical logic, A. Oostra
-                recently introduced an intuitionistic version of existential graphs,
-                based on Peirce's own intuitions of logical implication. This paves
-                the way for connections with the trend of constructive logics in proof
-                assistants.
+                recently introduced <a
+                href="https://www.unav.es/gep/IVJornadasArgentinaArnoldOostra.pdf">
+                an intuitionistic version</a> of existential graphs, based on
+                Peirce's own intuitions of logical implication. This paves the
+                way for connections with the trend of <i>constructive logics</i>
+                in proof assistants.
               </p>
               <p>
-                To handle quantification and equality, Peirce and Oostra use so-called lines of
-                identity, a string diagram-like notation well-suited to the intensional analysis
-                of relations. But state-of-the-art proof assistants are based on type theory —
-                and thus at their core on the λ-calculus, which is an intensional theory of
-                functions. Hence I designed a fully inductive variant of Oostra's graphs, based
-                on the standard notions of binder and variable at the root of λ-calculus. This
-                eases the development of a formalized metatheory, as well as the connection with
-                type theory. I named it flower calculus, because of the way I like to draw the
-                graphs as nested flowers.
+                To handle quantification and equality, Peirce and Oostra use
+                so-called <i>lines of identity</i>, a <a
+                href="https://en.wikipedia.org/wiki/String_diagram">string
+                diagram</a>-like notation well-suited to the intensional
+                analysis of relations. But state-of-the-art proof assistants are
+                based on <a href="https://en.wikipedia.org/wiki/Type_theory">
+                type theory</a> — and thus at their core on the <a
+                href="https://en.wikipedia.org/wiki/Lambda_calculus">
+                λ-calculus</a>, which is an intensional theory of functions.
+                Hence I designed a fully inductive variant of Oostra's graphs,
+                based on the standard notions of binder and variable at the root
+                of λ-calculus. This eases the development of a <a
+                href="https://github.com/Champitoad/flowers-metatheory">
+                formalized metatheory</a>, as well as the connection with type
+                theory. I named it <i>flower calculus</i>, because of the way I
+                like to draw the graphs as nested flowers.
               </p>
             </div>
           </li>
@@ -271,6 +328,16 @@
         <ul>
           <li>
             <span>
+              Pablo Donato, Pierre-Yves Strub, Benjamin Werner. <i>Actema : une
+              interface graphique et gestuelle pour preuves formelles
+              (démonstration).</i> 33èmes Journées Francophones des Langages
+              Applicatifs, Jun 2022, Saint-Médard-d'Excideuil, France.
+              pp.267-268. <a
+              href="https://hal.inria.fr/hal-03626854">⟨hal-03626854⟩</a>
+            </span>
+          </li>
+          <li>
+            <span>
               Pablo Donato, Pierre-Yves Strub, and Benjamin Werner. 2022.
               <i>A drag-and-drop proof tactic.</i>
               In Proceedings of the 11th ACM SIGPLAN International Conference on
@@ -300,16 +367,17 @@
     </summary>
     <section>
       <div class="content">
-        <h2>Education</h2>
         <div class="thread-zone">
           <div class="black thread"></div>
         </div>
+        Under construction 🔧
+        <!-- <h2>Education</h2>
         <ul>
           <li>
             <span>MPRI (Master Parisien de Recherche en Informatique)</span>
             <span>2018-2020</span>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </section>
   </details>
@@ -339,6 +407,16 @@
               Transcendentalist Circle</a>, a working group on the foundations of
               logic and computation in light of J.-Y. Girard's <i>Transcendental
               Syntax</i> programme.
+            </span>
+          </li>
+          <li>
+            <span>
+              I have been playing piano 🎹  since I was 6, and drums 🥁  since
+              highschool. I also dabble in singing 🎤 and
+              composition/improvisation with <a
+              href="https://en.wikipedia.org/wiki/Ableton_Live">Ableton Live</a>
+              🎛. You can find many of my experiments on <a
+              href="https://soundcloud.com/gloutonmagique">my SoundCloud</a>.
             </span>
           </li>
         </ul>

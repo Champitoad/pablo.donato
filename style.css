@@ -343,7 +343,7 @@ ul li::before {
 .resources {
     margin-top: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .resources a {
     padding: 0 3px 0 3px;
@@ -395,4 +395,9 @@ ul li::before {
     position: absolute;
     left: calc((var(--spoil-width) / 2));
     font-size: 8pt;
+}
+
+.bullet::before {
+    content: "•";
+    margin: 0 3px 0 3px;
 }
