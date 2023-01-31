@@ -1,7 +1,5 @@
 # Graphics
 
-- Custom bullet lists integrated in the thread
-
 # Layout
 
 # Interaction
