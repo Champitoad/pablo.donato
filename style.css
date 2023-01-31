@@ -31,7 +31,6 @@ strong {
 }
 
 a {
-    font-family: "Space Grotesk";
     color: black;
     text-decoration: underline;
     text-underline-offset: 0.2em;
@@ -341,7 +340,24 @@ ul li::before {
     height: 100%;
 }
 
+.resources {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.resources a {
+    padding: 0 3px 0 3px;
+    font-size: 10pt;
+    text-decoration: underline dashed;
+    text-underline-offset: 0.2em;
+    transition: none;
+}
+.resources a:hover {
+    text-decoration: underline;
+}
+
 #email {
+    font-family: "Space Grotesk";
     font-size: 16pt;
     width: 100%;
     text-align: center;
