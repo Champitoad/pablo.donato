@@ -311,10 +311,9 @@ ul li::marker {
 
 ul li::before {
     z-index: 2;
-    content: "▶";
+    content: url("bullet.svg");
     position: absolute;
     left: calc((var(--spoil-width) / 2));
-    font-size: 8pt;
 }
 
 .btn-space {
