@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:wght@300;400;700&family=Space+Grotesk:wght@300;400&display=swap');
+
 html, body {
     height: 100%;
 }
@@ -84,10 +86,14 @@ summary:not(#header) {
     background-color: black;
 }
 
+summary .content {
+    height: 100%;
+}
+
 summary h1 {
     color: white;
     font-weight: 400;
-    font-size: 22pt;
+    font-size: 21pt;
 }
 
 .thread-zone {
@@ -179,7 +185,7 @@ section .content {
 .content h2 {
     margin: 45px 0 30px 0;
     font-weight: 400;
-    font-size: 18pt;
+    font-size: 17pt;
 }
 
 .content h2:first-child {
@@ -240,7 +246,7 @@ p:last-child {
 
 #pablo, #donato {
     font-family: "Josefin Sans";
-    font-size: 28pt;
+    font-size: 26pt;
 }
 
 #pablo {
@@ -280,26 +286,8 @@ p:last-child {
 #github-handle {
     flex-grow: 1;
     width: var(--header-border);
-    background-color: black;
-}
-
-.btn-space {
-    flex-grow: 1;
     height: 100%;
-}
-
-#email {
-    font-size: 16pt;
-    width: 100%;
-    text-align: center;
-}
-
-#qed {
-    width: 15px;
-    height: 15px;
-    border: var(--thread-width);
-    border-style: solid;
-    border-color: white;
+    background-color: black;
 }
 
 ul {
@@ -326,13 +314,6 @@ ul li::before {
     position: absolute;
     left: calc((var(--spoil-width) / 2));
     font-size: 8pt;
-}
-
-#github-handle {
-    flex-grow: 1;
-    height: 100%;
-    width: var(--header-border);
-    background-color: black;
 }
 
 .btn-space {
@@ -358,7 +339,7 @@ ul li::before {
 
 #email {
     font-family: "Space Grotesk";
-    font-size: 16pt;
+    font-size: 15pt;
     width: 100%;
     text-align: center;
 }
@@ -369,35 +350,4 @@ ul li::before {
     border: var(--thread-width);
     border-style: solid;
     border-color: white;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    display: flex;
-    align-items: flex-start;
-    padding-bottom: 30px;
-}
-
-li:last-child {
-    padding-bottom: 0;
-}
-
-ul li::marker {
-    content: none;
-}
-
-ul li::before {
-    z-index: 2;
-    content: "▶";
-    position: absolute;
-    left: calc((var(--spoil-width) / 2));
-    font-size: 8pt;
-}
-
-.bullet::before {
-    content: "•";
-    margin: 0 3px 0 3px;
 }
