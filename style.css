@@ -35,7 +35,7 @@ strong {
 a {
     color: black;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 0.5px;
     text-underline-offset: 0.2em;
     transition: text-underline-offset 300ms;
 }
@@ -331,6 +331,7 @@ ul li::before {
     padding: 0 3px 0 3px;
     font-size: 10pt;
     text-decoration: underline dashed;
+    text-decoration-thickness: 0.5px;
     text-underline-offset: 0.2em;
     transition: none;
 }
@@ -354,6 +355,6 @@ ul li::before {
 }
 
 .bullet::before {
-    content: "•";
+    content: "⦁";
     margin: 0 3px 0 3px;
 }
