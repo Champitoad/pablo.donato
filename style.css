@@ -42,7 +42,7 @@ a {
 a:hover {
     text-underline-offset: 0.3em;
 }
-a:active:not(#github-btn a) {
+a:active:not(.social-btn a) {
     background-color: black;
     color: white;
 }
@@ -247,7 +247,7 @@ p:last-child {
 
 #pablo, #donato {
     font-family: "Josefin Sans";
-    font-size: 26pt;
+    font-size: 22pt;
 }
 
 #pablo {
@@ -259,35 +259,39 @@ p:last-child {
     font-weight: 400;
 }
 
-#spoil-btn, #github-btn {
-    margin: 0 var(--extpad) 0 var(--extpad);
-}
-#github-btn {
+.social-zone {
+    z-index: 1;
     position: absolute;
     top: 0;
     right: 0;
-    width: 30px;
-    height: var(--header-height);
+    padding: var(--header-border) 0 var(--header-border) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#github-btn svg {
-    width: 100%;
+    justify-content: start;
 }
 
-.github {
+.social-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.social-btn a {
+    width: 100%;
+    height: 100%;
+}
+
+.social {
     color: rgba(0, 0, 0, 1);
     transition: color linear 150ms;
 }
-.github:hover {
+.social:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-#github-handle {
-    flex-grow: 1;
+.social-handle {
     width: var(--header-border);
-    height: 100%;
+    height: 10px;
     background-color: black;
 }
 
@@ -314,11 +318,6 @@ ul li::before {
     content: url("bullet.svg");
     position: absolute;
     left: calc((var(--spoil-width) / 2));
-}
-
-.btn-space {
-    flex-grow: 1;
-    height: 100%;
 }
 
 .resources {
