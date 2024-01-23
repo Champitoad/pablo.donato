@@ -356,3 +356,28 @@ ul li::before {
     content: "⦁";
     margin: 0 3px 0 3px;
 }
+
+.cv-list li {
+    display: flex;
+    flex-direction: column;
+}
+.cv-list p {
+    margin-top: 15px;
+}
+
+.cv-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.cv-entry-subtitle {
+    font-size: 11pt;
+    margin-top: 5px;
+    color: rgb(50, 50, 50);
+}
+
+.date-range {
+    font-weight: 500;
+    margin-left: 15px;
+}
