@@ -57,7 +57,7 @@
     </g>
   </svg>
 
-  <details>
+  <details open>
     <summary id="header" class="black">
       <div id="lzone" class="header-zone black">
         <span id="pablo">Pablo</span>
@@ -222,7 +222,7 @@
           <a href="http://alessio.guglielmi.name/res/cos/">
             deep inference</a>
           <span class="bullet"></span>
-          <a href="http://www.jfsowa.com/peirce/ms514.htm">
+          <a href="https://en.wikipedia.org/wiki/Existential_graph">
             existential graphs</a>
           <span class="bullet"></span>
           <a href="https://en.wikipedia.org/wiki/Programming_language_theory">
@@ -248,23 +248,27 @@
         <ul>
           <li>
             <p>
-              <strong>Proof-by-action</strong> is a paradigm where the user
-              builds proofs by executing gestural actions directly on the proof
-              state. Typically, this corresponds to the possibility of
+              <a name="PbA"><strong>Proof-by-Action</strong></a> is a paradigm
+              where the user builds proofs by executing gestural actions
+              directly on the proof state. Typically, this corresponds to the
+              possibility of
               <i>clicking</i>, <i>dragging</i> and <i>dropping</i> items which
               represent the conclusion and hypotheses of the current goal. A
-              prototype implementation of this paradigm called <i>Actema</i> is
-              already available online at <a
+              prototype implementation of this paradigm called <a
+              href="#actema"><i>Actema</i></a> is available online at <a
               href="http://actema.xyz">actema.xyz</a>. With Benjamin Werner, we
-              are currently building <i>coq-actema</i>, a system that extends
+              are currently building <a
+              href="#coq-actema"><i>coq-actema</i></a>, a system that extends
               and integrates the interface of Actema in the <a
-              href="https://coq.inria.fr/">Coq proof assistant</a>.
+              href="https://en.wikipedia.org/wiki/Coq_(software)">Coq proof
+              assistant</a>.
             </p>
           </li>
           <li>
             <p>
-              <strong>Deep inference</strong> is a new methodology in proof
-              theory, which aims at overcoming some limitations of <a
+              <a href="http://alessio.guglielmi.name/res/cos/"><strong>Deep
+              inference</strong></a> is a new methodology in proof theory, which
+              aims at overcoming some limitations of <a
               href="https://en.wikipedia.org/wiki/Sequent_calculus">
               Gentzen-style</a> proof systems while preserving their good
               properties. In the setting of interactive proof building, one
@@ -283,8 +287,10 @@
           <li>
             <div>
               <p>
-                <strong>Existential graphs</strong> are among the first
-                diagrammatic proof systems in history, invented by <a
+                <a
+                href="https://en.wikipedia.org/wiki/Existential_graph"><strong>Existential
+                graphs</strong></a> are among the first diagrammatic proof
+                systems in history, invented by <a
                 href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce">
                 C. S. Peirce</a> as early as 1882. They enable a kind of
                 reasoning free from the linguistic notion of logical connective,
@@ -312,8 +318,9 @@
                 of λ-calculus. This eases the development of a <a
                 href="https://github.com/Champitoad/flowers-metatheory">
                 formalized metatheory</a>, as well as the connection with type
-                theory. I named it <i>flower calculus</i>, because of the way I
-                like to draw the graphs as nested flowers.
+                theory. I named it <a name="flower-calculus"><i>flower
+                calculus</i></a>, because of the way I like to draw the graphs
+                as nested flowers.
               </p>
             </div>
           </li>
@@ -406,7 +413,99 @@
       </div>
     </section>
   </details>
-  <details open>
+  <details>
+    <summary>
+      <div class="content">
+        <div class="thread-zone">
+          <div class="white thread"></div>
+        </div>
+        <div class="thread-zone">
+          <svg class="spoil-btn" viewBox="0 0 14.204834 14.955964">
+            <use xlink:href="#pacman" class="pacman" />
+          </svg>
+        </div>
+        <h1>Projects</h1>
+      </div>
+    </summary>
+    <section>
+      <div class="content">
+        <div class="thread-zone">
+          <div class="black thread"></div>
+        </div>
+        <ul class="cv-list">
+          <li>
+            <div class="cv-entry">
+              <span><b>Flower Prover</b></span>
+              <span class="date-range">2023-Present</span>
+            </div>
+            <p>
+              I am building in <a href="https://elm-lang.org/">Elm</a> the
+              <i>Flower Prover</i>, a prototype of GUI in the <a
+              href="#PbA">Proof-by-Action</a>
+              paradigm based on the
+              <a href="#flower-calculus">flower calculus</a>. It is a
+              mobile-friendly
+              <a
+              href="https://en.wikipedia.org/wiki/Structure_editor">structural
+              editor</a> based on a <a
+              href="https://en.wikipedia.org/wiki/Mode_(user_interface)">modal
+              interface</a>, a bit like the <a
+              href="https://en.wikipedia.org/wiki/Vim_(text_editor)">vim text
+              editor</a>: proofs are built in Proof mode, edited in Edit mode,
+              and (can soon be) navigated in Navigation mode.
+            </p>
+            <div class="resources">
+              <a class="resource" href="flowerprover/index.html">try it!</a>
+              <a class="resource" href="https://github.com/Champitoad/flower-prover">github</a>
+            </div>
+          </li>
+          <li>
+            <div class="cv-entry">
+              <span><b>coq-actema</b></span>
+              <span class="date-range">2022-Present</span>
+            </div>
+            <p>
+              <a name="coq-actema">coq-actema</a> is a system that integrates
+              the interface of Actema in the <a
+              href="https://en.wikipedia.org/wiki/Coq_(software)">Coq proof
+              assistant</a>
+              as an interactive proof view. Actema is packaged as an <a
+              href="https://en.wikipedia.org/wiki/Electron_(software_framework)">Electron</a>
+              application that receives goals from Coq over HTTP, and sends back
+              graphical actions to a Coq plugin that compiles them into proof
+              terms. Benjamin Werner implemented the elaborator for most
+              graphical actions, and I designed and built everything else.
+            </p>
+            <!-- <div class="resources">
+              <a class="resource" href="https://github.com/Champitoad/coq-actema">github</a>
+            </div> -->
+          </li>
+          <li>
+            <div class="cv-entry">
+              <span><b>Actema</b></span>
+              <span class="date-range">2020-2022</span>
+            </div>
+            <p>
+              <a name="actema">Actema</a> is a prototype of GUI for interactive
+              theorem proving by direct manipulation of formulas in goals. Its
+              development was started by <a
+              href="https://www.strub.nu/">Pierre-Yves Strub</a>
+              and <a href="http://www.lix.polytechnique.fr/~werner/">Benjamin
+              Werner</a> in 2019. I contributed many new features during my
+              Master's thesis, and took over most of its development during my
+              PhD thesis.
+            </p>
+            <div class="resources">
+              <a class="resource" href="http://www.actema.xyz">website</a>
+              <a class="resource" href="https://github.com/dualbox/proverInterface">frontend</a>
+              <a class="resource" href="https://gitlab.com/prover-ui/prover">backend</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </details>
+  <details>
     <summary>
       <div class="content">
         <div class="thread-zone">
@@ -422,6 +521,8 @@
     </summary>
     <section>
       <div class="content">
+        <a href="resume.pdf">One-page resume</a>
+        <img src="PDF_file_icon.svg" style="width: 20px; margin-left: 5px">
         <h2>Education</h2>
         <div class="thread-zone">
           <div class="black thread"></div>
@@ -450,9 +551,9 @@
               href="http://alessio.guglielmi.name/res/cos/">deep
               inference</a></i>.
             </p>
-            <div class="resources">
+            <!-- <div class="resources">
               <a class="resource" href="https://github.com/Champitoad/thesis/blob/main/latest.pdf">thesis</a>
-            </div>
+            </div> -->
           </li>
           <li>
             <div class="cv-entry">
@@ -543,7 +644,7 @@
               hand-written digits images. 
             </p>
             <div class="resources">
-              <a class="resource" href="https://github.com/Champitoad/gym-numgrid">source code</a>
+              <a class="resource" href="https://github.com/Champitoad/gym-numgrid">github</a>
             </div>
           </li>
           <li>
@@ -564,12 +665,30 @@
         <ul class="cv-list">
           <li>
             <div class="cv-entry">
-              <span><b>C#/XAML for HTML5</b> – Userware</span>
+              <span><b>C#/XAML for HTML5</b> – <a href="https://www.linkedin.com/company/userware/about/">Userware</a></span>
               <span class="date-range">2018</span>
             </div>
             <p>
               I worked in R&D on the TypeScript compiler integrated in the <i>C#/XAML for HTML5</i> product.
             </p>
+          </li>
+        </ul>
+        <h2>Skills</h2>
+        <ul class="cv-list">
+          <li>
+            <span><b>Proof assistants</b> – Coq</span>
+          </li>
+          <li>
+            <span><b>General-purpose programming</b> – OCaml, Python, Java, C#, Prolog, C/C++</span>
+          </li>
+          <li>
+            <span><b>Web programming</b> – HTML/CSS, JavaScript, TypeScript, Vue.js, Electron, Elm, PHP/MySQL</span>
+          </li>
+          <li>
+            <span><b>System administration</b> – GNU/Linux, Unix shell, systemd, Nix</span>
+          </li>
+          <li>
+            <span><b>Languages</b> – French (native), English (fluent)</span>
           </li>
         </ul>
       </div>
@@ -624,6 +743,21 @@
       </div>
     </div>
   </div>
+  <script>
+    // Open sections when clicking on internal links
+    document.querySelectorAll("a:link").forEach((link) => {
+      let targetName = link.getAttribute("href").slice(1);
+      let target = document.querySelector(`a[name="${targetName}"]`);
+      if (target) {
+        let section = target.closest("details");
+        link.addEventListener("click", (e) => {
+          if (!section.open) {
+            section.open = true;
+          }
+        });
+      }
+    });
+  </script>
   <!-- <script src="animations.js"></script> -->
 </body>
 </html>

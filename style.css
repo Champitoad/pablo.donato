@@ -34,15 +34,20 @@ strong {
 
 a {
     color: black;
+}
+/* a:target {
+    color:rgb(93, 16, 166)
+} */
+a:link {
     text-decoration: underline;
     text-decoration-thickness: 0.5px;
     text-underline-offset: 0.2em;
     transition: text-underline-offset 300ms;
 }
-a:hover {
+a:link:hover {
     text-underline-offset: 0.3em;
 }
-a:active:not(.social-btn a) {
+a:active {
     background-color: black;
     color: white;
 }
@@ -285,6 +290,7 @@ p:last-child {
 .social-btn a {
     width: 100%;
     height: 100%;
+    background-color: white;
 }
 
 .social {
