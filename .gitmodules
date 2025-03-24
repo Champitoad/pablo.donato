@@ -1,0 +1,3 @@
+[submodule "flower-prover"]
+	path = flower-prover
+	url = https://github.com/Champitoad/flower-prover
