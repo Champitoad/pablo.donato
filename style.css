@@ -339,6 +339,7 @@ ul li::before {
 .resources {
     margin-top: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 a.resource {
