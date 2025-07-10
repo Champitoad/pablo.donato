@@ -127,27 +127,19 @@
           Hi! Welcome to my webpage.
         </p>
         <p>
-          I am a post-doctoral researcher in computer science, working towards better user
-          interfaces for building programs that are correct-by-construction.
-          
-          Previously I did a PhD, working within the
+          I am a postdoctoral researcher in computer science, working towards better user interfaces
+          for <a href="https://en.wikipedia.org/wiki/Formal_verification">proving</a> and <a
+          href="https://en.wikipedia.org/wiki/Computer_programming">programming</a>.
+          I want programming systems that make it easier to both <i>create</i>, <i>understand</i> and <i>modify</i>
+          software, so that people can take control over their digital tools.
+        </p>
+        <p>
+          Previously I did a PhD at <a href="">École Polytechnique</a>, where I worked within the
           <a href="https://team.inria.fr/partout/">Partout team</a> of the <a
           href="https://www.lix.polytechnique.fr/">LIX laboratory</a> under the
           supervision of <a
           href="http://www.lix.polytechnique.fr/Labo/Benjamin.Werner/">Benjamin
           Werner</a>.
-        </p>
-        <p>
-          My work lies at the intersection between <a
-          href="https://en.wikipedia.org/wiki/Mathematical_logic">mathematical logic</a>, <a
-          href="https://en.wikipedia.org/wiki/Programming_language_theory">programming language
-          theory</a> and <a
-          href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction">human-computer
-          interaction</a>, with applications to <a
-          href="https://en.wikipedia.org/wiki/Proof_assistant">interactive theorem proving</a>. I
-          try to design graphical representations of logical theories that are better suited to
-          direct manipulation by humans, but still understandable by computers.
-        </p>
         <p>
           Please feel free to send me a message at
         </p>
@@ -302,6 +294,17 @@
     </summary>
     <section>
       <div class="content">
+        <p>
+          My work currently lies at the intersection between <a
+          href="https://en.wikipedia.org/wiki/Mathematical_logic">mathematical logic</a>, <a
+          href="https://en.wikipedia.org/wiki/Programming_language_theory">programming language
+          theory</a> and <a
+          href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction">human-computer
+          interaction</a>, with applications to <a
+          href="https://en.wikipedia.org/wiki/Proof_assistant">interactive theorem proving</a>. I
+          try to design graphical representations of logical theories that are better suited to
+          direct manipulation by humans, but still understandable by computers.
+        </p>
         <h2>Interests</h2>
         <div class="thread-zone">
           <div class="black thread"></div>
@@ -408,9 +411,13 @@
                 an intuitionistic version</a> of existential graphs, based on
                 Peirce's own intuitions of logical implication. This paves the
                 way for connections with the trend of <i>constructive logics</i>
-                in proof assistants.
+                in proof assistants. I developed the <a
+                href="https://arxiv.org/abs/2402.15174">Flower Calculus</a>, a variant of Oostra's
+                graphs for first-order logic with good proof-theoretic properties, and built the <a
+                href="#flower-prover">Flower Prover</a>, a prototype of GUI for interactive theorem
+                proving based on it.
               </p>
-              <p>
+              <!-- <p>
                 To handle quantification and equality, Peirce and Oostra use
                 so-called <i>lines of identity</i>, a <a
                 href="https://en.wikipedia.org/wiki/String_diagram">string
@@ -427,7 +434,7 @@
                 formalized metatheory</a>, as well as the connection with type
                 theory. I named it <i>flower calculus</i>, because of the way I
                 like to draw the graphs as nested flowers.
-              </p>
+              </p> -->
             </div>
           </li>
         </ul>
@@ -560,14 +567,14 @@
           <li>
             <div class="cv-entry">
               <span><b>Flower Prover</b></span>
-              <span class="date-range">2023-Present</span>
+              <span class="date-range">2023-2024</span>
             </div>
             <p>
-              I am building in <a href="https://elm-lang.org/">Elm</a> the
-              <i>Flower Prover</i>, a prototype of GUI in the <a
+              I built in <a href="https://elm-lang.org/">Elm</a> the
+              <a name="flower-prover"><i>Flower Prover</i></a>, a prototype of GUI in the <a
               href="#PbA">Proof-by-Action</a>
               paradigm based on the
-              <a href="#flower-calculus">flower calculus</a>. It is a
+              <a href="#flower-calculus">Flower Calculus</a>. It is a
               mobile-friendly
               <a
               href="https://en.wikipedia.org/wiki/Structure_editor">structural
