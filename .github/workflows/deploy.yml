@@ -22,5 +22,5 @@ jobs:
 
     - name: Deploy to server
       run: |        
-        rsync -avz --delete ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
+        rsync -avz --delete -e "ssh -vvv -i ~/.ssh/id_ed25519_epidictic -o StrictHostKeyChecking=no" ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
 
