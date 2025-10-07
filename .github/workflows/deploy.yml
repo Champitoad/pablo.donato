@@ -22,4 +22,5 @@ jobs:
 
     - name: Deploy to server
       run: |        
-        rsync -avz --delete ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.DEPLOY_PATH }}
+        ssh -i ~/.ssh/id_ed25519_epidictic ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} \
+        "cd ${{ secrets.DEPLOY_PATH }} && git reset --hard && git pull origin main"
