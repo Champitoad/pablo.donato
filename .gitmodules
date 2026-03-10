@@ -1,3 +1,6 @@
 [submodule "flower-prover"]
 	path = flowerprover
 	url = https://github.com/Champitoad/flower-prover
+[submodule "scroller"]
+	path = scroller
+	url = https://github.com/pablodonato/scroller.git
