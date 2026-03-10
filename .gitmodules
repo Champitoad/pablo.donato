@@ -3,4 +3,4 @@
 	url = https://github.com/Champitoad/flower-prover
 [submodule "scroller"]
 	path = scroller
-	url = https://github.com/pablodonato/scroller.git
+	url = git@github.com:Champitoad/scroller.git
