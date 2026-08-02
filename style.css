@@ -321,6 +321,16 @@ li {
     padding-bottom: 30px;
 }
 
+li ul {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+li li {
+    display: block;
+    padding-bottom: 10px;
+}
+
 li:last-child {
     padding-bottom: 0;
 }
@@ -332,6 +342,13 @@ ul li::marker {
 ul li::before {
     z-index: 2;
     content: url("bullet.svg");
+    position: absolute;
+    left: calc((var(--spoil-width) / 2));
+}
+
+li li::before {
+    z-index: 2;
+    content: url("white-bullet.svg");
     position: absolute;
     left: calc((var(--spoil-width) / 2));
 }
